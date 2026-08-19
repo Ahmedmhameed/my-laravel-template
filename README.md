@@ -25,6 +25,23 @@ The development dependencies include:
 - Laravel IDE Helper for improved editor support
 - Laravel Boost and Pao for Laravel development workflows
 
+## Laravel Boost
+
+Laravel Boost provides AI development guidelines, skills, and MCP integration for the application. Install or configure it interactively with:
+
+```bash
+php artisan boost:install
+```
+
+When the project gains new Composer packages, refresh Boost so its guidelines and skills reflect the updated application:
+
+```bash
+composer require vendor/package
+php artisan boost:update
+```
+
+Run `boost:update` whenever the installed packages or development workflow changes significantly. The installer and updater may modify project-level AI configuration files, so review those changes before committing them.
+
 ## Requirements
 
 Install the following before starting:
